@@ -1,0 +1,57 @@
+/* ------------------------------------------- */
+/* Vars */
+/* ------------------------------------------- */
+
+$color1: #be70f0;
+$color2: #4ac1a5;
+$color3: #70b5f0;
+$color4: #84cb6b;
+
+/* ------------------------------------------- */
+/* Event List */
+/* ------------------------------------------- */
+
+.wrap .event-list {
+	li {
+		background: white;
+		display: flex;
+		margin: 0 0 1rem 0;
+		transition: opacity 300ms;
+		&.status-draft {
+			opacity: .5;
+		}
+	}
+	.date {
+		background: $color3;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0.25rem 1rem;
+		text-align: center;
+		.month, .day, .year {
+			display: block;
+		}
+		.month {
+			font-size: 0.75rem;
+		}
+		.day {
+			font-size: 1rem;
+			line-height: 1.25;
+		}
+		.year {
+			font-size: 0.75rem;
+		}
+	}
+	.event-meta {
+		padding: 0.5rem 1rem;
+		h3 {
+			font-size: 1rem;
+			font-weight: normal;
+			line-height: 1.25;
+		}
+		.locale {
+			color: mix(white, black, 60%);
+		}
+	}
+}

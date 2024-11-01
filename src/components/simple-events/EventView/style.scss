@@ -1,0 +1,12 @@
+.wrap .view-options {
+	li {
+		color: #84cb6b;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0.25em 0.5em;
+		&.selected {
+			background: #84cb6b;
+			color: white;
+		}
+	}
+}

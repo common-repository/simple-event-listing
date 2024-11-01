@@ -1,0 +1,30 @@
+/* ------------------------------------------- */
+/* Vars */
+/* ------------------------------------------- */
+
+$color1: #be70f0;
+$color2: #4ac1a5;
+$color3: #70b5f0;
+$color4: #84cb6b;
+
+/* ------------------------------------------- */
+/* Pagination */
+/* ------------------------------------------- */
+
+.wrap .pagination {
+	margin: 0.5rem 0;
+	li {
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.75rem;
+		margin-right: 0.25rem;
+		padding: 0.25rem 0.5rem;
+		transition: background-color 300ms ease-in-out;
+		&:hover {
+			background-color: $color1;
+		}
+		&.current {
+			background-color: transparent;
+		}
+	}
+}

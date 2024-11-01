@@ -1,0 +1,35 @@
+/* ------------------------------------------- */
+/* Vars */
+/* ------------------------------------------- */
+
+$color1: #be70f0;
+$color2: #4ac1a5;
+$color3: #70b5f0;
+$color4: #84cb6b;
+
+/* ------------------------------------------- */
+/* Vars */
+/* ------------------------------------------- */
+
+.wrap .event-form {
+	h2 {
+		font-size: 1.25rem;
+		font-weight: normal;
+		margin: 0 0 1rem;
+	}
+	.form-field {
+		margin-bottom: 1rem;
+		label {
+			display: block;
+			font-size: 0.75rem;
+		}
+	}
+	input[type='text'],
+	textarea {
+		border: 1px solid lightgray;
+		box-sizing: border-box;
+		font-size: 1rem;
+		padding: 0.5rem;
+		width: 100%;
+	}
+}

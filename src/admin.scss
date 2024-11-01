@@ -1,0 +1,119 @@
+/* ------------------------------------------- */
+/* Reset */
+/* ------------------------------------------- */
+
+.wrap {
+	div, span,
+	h1, h2, h3, h4, h5, h6, p,
+	em, img, b, u, i, strong, dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside,
+	figure, figcaption, footer, header,
+	menu, nav, output, section,
+	time, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+	}
+	ol, ul {
+		list-style: none;
+	}
+}
+
+/* ------------------------------------------- */
+/* Vars */
+/* ------------------------------------------- */
+
+$color1: #be70f0;
+$color2: #4ac1a5;
+$color3: #70b5f0;
+$color4: #84cb6b;
+
+/* ------------------------------------------- */
+/* Page Header */
+/* ------------------------------------------- */
+
+.wrap .app-header {
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 1rem;
+	padding: 1rem 2rem;
+	h1 {
+		font-size: 1.5rem;
+	}
+}
+
+/* ------------------------------------------- */
+/* Layout */
+/* ------------------------------------------- */
+
+.simple-event-listing {
+	overflow: hidden;
+	width: 100%;
+}
+
+.simple-event-listing-ui {
+	display: flex;
+	width: 200%;
+	.event-form
+	 {
+	 	background: white;
+		box-sizing: border-box;
+		opacity: 0;
+		padding: 2rem;
+		transition: all 400ms ease-in-out;
+		width: 50%;
+	}
+	.event-list {
+		transition: all 400ms ease-in-out;
+		width: 50%;
+	}
+	&.single-view {
+		.event-list {
+			margin-left: -50%;
+			opacity: 0;
+		}
+		.event-form {
+			margin-left: 0;
+			opacity: 1;
+		}
+	}
+}
+
+/* ------------------------------------------- */
+/* Global */
+/* ------------------------------------------- */
+
+.btn {
+	background-color: $color4;
+	border: 0 none;
+	color: white;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-right: 1rem;
+	padding: 0.5rem 1rem;
+	transition: all 300ms ease-in-out;
+	&:hover {
+		background-color: mix(black, $color4, 15%);
+	}
+	&.gray {
+		background-color: mix(white,black,75%);
+		&:hover {
+			background-color: mix(white, black, 65%);
+		}
+	}
+}
+
+.btn-icn {
+	background-color: transparent;
+	border: 0 none;
+	color: $color2;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-right: 1rem;
+	padding: 0;
+}
